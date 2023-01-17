@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import Home from "./Pages/Home";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="text-[#f72]">test</div>
+    <div className="bg-[#f72] ">
+      <Home />
+    </div>
   </React.StrictMode>
 );
 
