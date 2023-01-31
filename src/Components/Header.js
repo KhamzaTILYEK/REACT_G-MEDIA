@@ -1,5 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import Button from "./Button";
 
 export default function Header() {
-  return <div className="p-4">Header</div>;
+  const [a, setA] = useState(false);
+  return (
+    <div>
+      <div className={a ? "text-[#f32]" : "text-[#f72]"}>Header</div>
+      <Button
+        type={1}
+        name="Test"
+        onclick={() => {
+          setA(!a);
+        }}
+      />
+    </div>
+  );
 }
