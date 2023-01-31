@@ -7,8 +7,8 @@ export default function Header() {
     <div>
       <div className={a ? "text-[#f32]" : "text-[#f72]"}>Header</div>
       <Button
-        type={1}
-        name="Test"
+        type={a ? 1 : 0}
+        name="Color changer"
         onclick={() => {
           setA(!a);
         }}
