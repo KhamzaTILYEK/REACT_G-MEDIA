@@ -12,7 +12,7 @@ export default function Button({ name, onclick, type }) {
         onclick();
       }}
     >
-      {name}
+      {name ? name : "Button"}
     </button>
   );
 }

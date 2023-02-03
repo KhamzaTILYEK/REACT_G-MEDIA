@@ -7,6 +7,7 @@ export default function Components() {
   return (
     <div>
       <Input />
+      <div></div>
       <Button />
       <Logo />
     </div>
